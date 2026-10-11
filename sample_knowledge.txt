@@ -1,0 +1,34 @@
+
+OMNIS AI PROJECT NOTES
+
+Omnis AI is a document question-answering assistant.
+Its purpose is to help users find useful information in their own documents.
+
+DOCUMENT RETRIEVAL
+
+The system divides documents into smaller text sections called chunks.
+Each chunk is compared with the user's question.
+Keyword frequency and inverse document frequency help rank relevant chunks.
+
+EVIDENCE AND SOURCES
+
+Every supported answer should show the source filename and a passage from the document.
+The assistant should not invent facts that are missing from the knowledge base.
+When evidence is weak, the assistant should clearly say that it cannot find a reliable answer.
+
+EVALUATION
+
+Retrieval quality can be tested with questions whose answers are already known.
+A useful evaluation records the question, expected source, and retrieved source.
+Questions without sufficient evidence should be marked as unresolved.
+
+PRIVACY
+
+In this starter version, uploaded files are processed by the application.
+Do not upload private or sensitive documents to a public demo.
+A hosted demo may have temporary storage and is not automatically a private service.
+
+FUTURE IMPROVEMENTS
+
+Possible improvements include PDF support, semantic embeddings, a language model,
+user authentication, persistent storage, and a larger evaluation dataset.
